@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#flow{
+    background: url(images/flow.gif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+
+}
+.flow-btn{
+   margin: 70px auto 0;
+}
+.flow-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: color 1s;
+    
+}
+
+.flow-text{
+    text-align: center;
+    color: darkorange;
+    padding-top: 180px;
+    
+}
+.flow-text h1{
+    font-size: 30px;
+    font-style: italic;
+}
+.flow-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#fff;
+    z-index: -1;
+    transition: 1s;
+}
+.flow-btn a:hover span{
+    width: 100%;
+}
+.flow-btn a:hover{
+    color: #000;
+}
+
+
+@media screen and (max-width:770px){
+    .flow-text h1{
+    font-size: 20px;
+    font-style: italic;
+}
+    .flow-btn a{
+        display: block;
+        margin: 20px auto;
+        
+    }    
+}
+
+#About me{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    
+}
+
+.title-text h1{
+ font-size: 50px;
+    color: darkblue;
+}
+
+/*--About me--*/
+
+#Aboutme{
+    width: 100%;
+    padding: 70px 0;
+    background-image: url(images/color.jpg);
+}
+
+.About me box{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.About me{
+    flex-basis: 50%;
+}
+
+
+
+.marcell-image{
+    width: 600px;
+    height: 600px;
+    flex-basis: 50%;
+    margin: auto;
+    
+}
+.marcell-image img{
+    width: 70%;
+    border-radius: 10px;
+}
+@media screen and (max-width:770px){
+    title-text h1{
+         font-size: 20px;
+    }
+    .About me{
+    flex-basis: 100%;
+    }
+}
+
+/*--achievemnts--*/
+#Achievements{
+    width: 100%;
+    padding: 70px 0;
+    background: url(images/sky.gif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 250vh;
+}
+
+.My achievement-box{
+    width: 100%;
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+
+.Achievement{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.Achievement img{
+    
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+    
+.container1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic{
+    width 80%;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+#SKILLS{
+    background-image: url(images/city.jfif);
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: blue;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 14px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative; 
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translate(50%);
+}
+
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    backgorund: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%);
+    border-radius: 2px;
+}
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.container{
+    width: 40%;
+    height: 60%;
+    padding: 20px 20px;
+    display: inline-block;
+    align-items: center;
+    border-radius: 15px;
+    transform: translateX(50px);
+}
+
+#Contactme{
+    width: 100%;
+    padding: 70px 0;
+    background-image: url(images/contact.jfif);
+}
+
+.Contact me-section{
+    background-color: dimgrey;
+    background-size: cover;
+    height: 100vh;
+    padding: 40px 0;
+}
+
+.contact-sesction h1{
+    text-align: center;
+    color: #ddd;
+}
+
+.border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+    background: #2980b9;
+}
+
+#loading{
+    background: #000 url(images/loader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    
+}
